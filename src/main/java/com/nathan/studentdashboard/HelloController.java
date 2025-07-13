@@ -18,7 +18,7 @@ public class HelloController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        rootPane.widthProperty().addListener((obs, oldVal, newVal) -> {
+        rootPane.widthProperty().addListener((_, _, newVal) -> {
             double newWidth = newVal.doubleValue();
             leftPane.setPrefWidth(newWidth / 6);
         });
