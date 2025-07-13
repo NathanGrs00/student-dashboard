@@ -9,19 +9,18 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 
-
-<BorderPane xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nathan.studentdashboard.HelloController">
+<BorderPane fx:id="rootPane" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nathan.studentdashboard.HelloController">
    <left>
-      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+      <VBox fx:id="leftPane" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER" spacing="10.0">
          <children>
             <ImageView fitHeight="49.0" fitWidth="101.0" pickOnBounds="true" preserveRatio="true" />
             <Label alignment="CENTER" prefHeight="17.0" prefWidth="136.0" text="student_name" />
-            <Button mnemonicParsing="false" prefHeight="27.0" prefWidth="102.0" text="Home" />
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="106.0" text="Deadlines" />
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="118.0" text="Notes" />
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="104.0" text="Grades" />
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="109.0" text="Schedule" />
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="108.0" text="Logout" />
+             <Button mnemonicParsing="false" text="Home" maxWidth="Infinity" />
+             <Button mnemonicParsing="false" text="Deadlines" maxWidth="Infinity" />
+             <Button mnemonicParsing="false" text="Notes" maxWidth="Infinity" />
+             <Button mnemonicParsing="false" text="Grades" maxWidth="Infinity" />
+             <Button mnemonicParsing="false" text="Schedule" maxWidth="Infinity" />
+             <Button mnemonicParsing="false" text="Logout" maxWidth="Infinity" />
          </children>
       </VBox>
    </left>

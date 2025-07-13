@@ -1,14 +1,26 @@
 package com.nathan.studentdashboard;
 
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
+import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.VBox;
 
-public class HelloController {
+import java.net.URL;
+import java.util.ResourceBundle;
+
+public class HelloController implements Initializable {
     @FXML
-    private Label welcomeText;
+    private BorderPane rootPane;
 
     @FXML
-    protected void onHelloButtonClick() {
-        welcomeText.setText("Welcome to JavaFX Application!");
+    private VBox leftPane;
+
+    @Override
+    public void initialize(URL url, ResourceBundle rb) {
+        rootPane.widthProperty().addListener((obs, oldVal, newVal) -> {
+            double newWidth = newVal.doubleValue();
+            leftPane.setPrefWidth(newWidth / 6);
+        });
     }
 }
