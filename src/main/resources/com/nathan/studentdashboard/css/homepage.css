@@ -2,6 +2,24 @@
     -fx-background-color: #3498db;
 }
 
+#leftPane Button {
+    -fx-background-color: #5dade2;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8;
+    -fx-padding: 8 16;
+    -fx-effect: dropshadow(gaussian, #2980b9, 4, 0.3, 0, 2);
+    -fx-cursor: hand;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-transition: background-color 0.2s;
+}
+
+#leftPane Button:hover {
+    -fx-background-color: #2471a3;
+}
+
 #rootPane {
     -fx-background-color: #2980b9;
 }
