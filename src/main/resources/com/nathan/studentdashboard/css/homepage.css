@@ -1,3 +1,7 @@
 #leftPane {
     -fx-background-color: #3498db;
 }
+
+#rootPane {
+    -fx-background-color: #2980b9;
+}
