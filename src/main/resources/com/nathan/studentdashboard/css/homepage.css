@@ -16,6 +16,11 @@
     -fx-transition: background-color 0.2s;
 }
 
+.button {
+    -fx-max-width: Infinity;
+    -fx-pref-width: 90%;
+}
+
 #leftPane Button:hover {
     -fx-background-color: #2471a3;
 }
