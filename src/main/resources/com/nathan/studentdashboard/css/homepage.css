@@ -13,11 +13,7 @@
     -fx-cursor: hand;
     -fx-border-color: transparent;
     -fx-border-width: 0;
-    -fx-transition: background-color 0.2s;
-}
-
-.button {
-    -fx-max-width: Infinity;
+    -fx-transition: background-color 0.2s; -fx-max-width: Infinity;
     -fx-pref-width: 90%;
 }
 
