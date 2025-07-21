@@ -2,6 +2,7 @@ package com.nathan.studentdashboard;
 
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
@@ -21,6 +22,9 @@ public class HelloController implements Initializable {
         rootPane.widthProperty().addListener((_, _, newVal) -> {
             double newWidth = newVal.doubleValue();
             leftPane.setPrefWidth(newWidth / 6);
+            leftPane.getChildren().stream()
+                    .filter(node -> node instanceof Button)
+                    .forEach(node -> ((Button) node).setPrefWidth(leftPane.getPrefWidth() * 0.9));
         });
     }
 }

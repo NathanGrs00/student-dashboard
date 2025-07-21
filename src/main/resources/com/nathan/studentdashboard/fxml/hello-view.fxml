@@ -20,12 +20,12 @@
                  </image>
              </ImageView>
             <Label alignment="CENTER" prefHeight="17.0" prefWidth="136.0" text="student_name" />
-             <Button maxWidth="Infinity" mnemonicParsing="false" text="Home" />
-             <Button maxWidth="Infinity" mnemonicParsing="false" text="Deadlines" />
-             <Button maxWidth="Infinity" mnemonicParsing="false" text="Notes" />
-             <Button maxWidth="Infinity" mnemonicParsing="false" text="Grades" />
-             <Button maxWidth="Infinity" mnemonicParsing="false" text="Schedule" />
-             <Button maxWidth="Infinity" mnemonicParsing="false" text="Logout" />
+             <Button mnemonicParsing="false" text="Home" />
+             <Button mnemonicParsing="false" text="Deadlines" />
+             <Button mnemonicParsing="false" text="Notes" />
+             <Button mnemonicParsing="false" text="Grades" />
+             <Button mnemonicParsing="false" text="Schedule" />
+             <Button mnemonicParsing="false" text="Logout" />
          </children>
       </VBox>
    </left>
