@@ -1,4 +1,4 @@
-package com.nathan.studentdashboard;
+package com.nathan.studentdashboard.controller;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -55,7 +55,7 @@ public class HelloController implements Initializable {
 
     private Node loadFXML(String fxmlName) {
         try {
-            return FXMLLoader.load(getClass().getResource("fxml/" + fxmlName));
+            return FXMLLoader.load(getClass().getResource("/com/nathan/studentdashboard/fxml/" + fxmlName));
         } catch (IOException e) {
             return new Label("Error loading " + fxmlName);
         }

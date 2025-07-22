@@ -6,4 +6,6 @@ module com.nathan.studentdashboard {
 
     opens com.nathan.studentdashboard to javafx.fxml;
     exports com.nathan.studentdashboard;
+    exports com.nathan.studentdashboard.controller;
+    opens com.nathan.studentdashboard.controller to javafx.fxml;
 }
