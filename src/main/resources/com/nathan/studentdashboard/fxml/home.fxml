@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.geometry.Insets?>
+
+<GridPane fx:id="homeGrid" xmlns:fx="http://javafx.com/fxml" hgap="20" vgap="20" padding="20">
+    <!-- Row 0: Overview of Grades -->
+    <Label text="Overview of Grades:" GridPane.rowIndex="0" GridPane.columnIndex="0" />
+    <Label fx:id="overviewGradesLabel" text="-" GridPane.rowIndex="0" GridPane.columnIndex="1" />
+
+    <!-- Row 1: Latest Grade -->
+    <Label text="Latest Grade:" GridPane.rowIndex="1" GridPane.columnIndex="0" />
+    <Label fx:id="latestGradeLabel" text="-" GridPane.rowIndex="1" GridPane.columnIndex="1" />
+
+    <!-- Row 2: GPA -->
+    <Label text="GPA:" GridPane.rowIndex="2" GridPane.columnIndex="0" />
+    <Label fx:id="gpaLabel" text="-" GridPane.rowIndex="2" GridPane.columnIndex="1" />
+</GridPane>
