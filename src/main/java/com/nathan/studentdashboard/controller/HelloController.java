@@ -55,9 +55,13 @@ public class HelloController implements Initializable {
 
     private Node loadFXML(String fxmlName) {
         try {
-            return FXMLLoader.load(getClass().getResource("/com/nathan/studentdashboard/fxml/" + fxmlName));
-        } catch (IOException e) {
-            return new Label("Error loading " + fxmlName);
+            var resource = getClass().getResource("/com/nathan/studentdashboard/fxml/" + fxmlName);
+            if (resource == null) {
+                return new Label("FXML file not found: " + fxmlName);
+            }
+            return FXMLLoader.load(resource);
+        } catch (IOException | RuntimeException e) {
+            return new Label("Error loading " + fxmlName + ": " + e.getMessage());
         }
     }
 }
