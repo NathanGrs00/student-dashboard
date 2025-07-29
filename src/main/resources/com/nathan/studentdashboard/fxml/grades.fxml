@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?import javafx.scene.control.Label?>
+
 <?import javafx.scene.layout.VBox?>
-<VBox xmlns:fx="http://javafx.com/fxml/1" alignment="CENTER">
-    <Label text="Grades view not implemented yet."/>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.layout.HBox?>
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" spacing="20" alignment="TOP_CENTER" style="-fx-padding: 30;">
+    <!-- GPA and Recent Grade Overview -->
+    <HBox spacing="40" alignment="CENTER">
+        <Label text="GPA:" style="-fx-font-size: 16;"/>
+        <Label fx:id="gpaLabel" text="-" style="-fx-font-weight: bold; -fx-font-size: 16;"/>
+        <Label text="Most Recent Grade:" style="-fx-font-size: 16;"/>
+        <Label fx:id="recentGradeLabel" text="-" style="-fx-font-weight: bold; -fx-font-size: 16;"/>
+    </HBox>
+    
+    <!-- Table of All Grades -->
+    <Label text="All Grades" style="-fx-font-size: 18; -fx-font-weight: bold;"/>
+    <TableView fx:id="gradesTable" prefWidth="500">
+        <columns>
+            <TableColumn fx:id="subjectColumn" text="Subject" prefWidth="200"/>
+            <TableColumn fx:id="gradeColumn" text="Grade" prefWidth="100"/>
+            <TableColumn fx:id="dateColumn" text="Date Received" prefWidth="200"/>
+        </columns>
+    </TableView>
 </VBox>
