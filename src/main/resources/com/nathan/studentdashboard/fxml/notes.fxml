@@ -5,24 +5,25 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.Button?>
-<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.HBox?>
 
 <VBox fx:id="root"
       xmlns:fx="http://javafx.com/fxml/1"
       alignment="TOP_CENTER"
       spacing="20"
-      style="-fx-padding: 30; -fx-background-color: #f8f9fa; -fx-border-radius: 10; -fx-background-radius: 10; -fx-border-color: #2196f3; -fx-border-width: 2;">
-    <Label text="Notes" style="-fx-font-size: 22px; -fx-font-weight: bold; -fx-text-fill: #2196f3;" />
+      styleClass="notes-root">
+    <Label text="Notes" styleClass="notes-title"/>
     
     <!-- Add Note Section -->
     <HBox spacing="10" alignment="CENTER">
-        <TextField fx:id="noteTextField" promptText="Type a new note..." prefWidth="240"/>
-        <Button fx:id="addNoteButton" text="Add Note" style="-fx-background-color: #2196f3; -fx-text-fill: white;"/>
+        <TextField fx:id="noteTextField" promptText="Type a new note..." prefWidth="240" styleClass="notes-textfield"/>
+        <Button fx:id="addNoteButton" text="Add Note" styleClass="notes-add-btn"/>
     </HBox>
     
     <!-- Notes List -->
     <ListView fx:id="notesListView"
               maxHeight="400"
               prefWidth="300"
-              placeholder="No notes yet. Add your first note!" />
-</VBox>
+              placeholder="No notes yet. Add your first note!"
+              styleClass="notes-listview"/>
+</VBox> 
