@@ -1,3 +1,28 @@
-#rootPane {
-    -fx-background-color: #2980b9;
+/* Root background */
+.root-home {
+    -fx-background-color: #f8f9fa;
+}
+
+/* Main title */
+.home-title {
+    -fx-font-size: 32px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2196f3;
+}
+
+/* Button container spacing */
+.home-hbox {
+    /* No direct CSS for spacing, handled in FXML */
+}
+
+/* Icon buttons */
+.home-icon-btn {
+    -fx-background-radius: 16px;
+    -fx-background-color: #e3f2fd;
+    -fx-padding: 16px 16px;
+}
+
+/* Button labels */
+.home-btn-label {
+    -fx-font-size: 16px;
 }
