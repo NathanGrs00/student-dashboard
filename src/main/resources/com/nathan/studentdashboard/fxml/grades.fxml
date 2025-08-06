@@ -6,18 +6,19 @@
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.layout.HBox?>
 
-<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" spacing="20" alignment="TOP_CENTER" style="-fx-padding: 30;">
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      spacing="20" alignment="TOP_CENTER" styleClass="grades-root">
     <!-- GPA and Recent Grade Overview -->
-    <HBox spacing="40" alignment="CENTER">
-        <Label text="GPA:" style="-fx-font-size: 16;"/>
-        <Label fx:id="gpaLabel" text="-" style="-fx-font-weight: bold; -fx-font-size: 16;"/>
-        <Label text="Most Recent Grade:" style="-fx-font-size: 16;"/>
-        <Label fx:id="recentGradeLabel" text="-" style="-fx-font-weight: bold; -fx-font-size: 16;"/>
+    <HBox spacing="40" alignment="CENTER" styleClass="grades-hbox">
+        <Label text="GPA:" styleClass="grades-label"/>
+        <Label fx:id="gpaLabel" text="-" styleClass="grades-label-bold"/>
+        <Label text="Most Recent Grade:" styleClass="grades-label"/>
+        <Label fx:id="recentGradeLabel" text="-" styleClass="grades-label-bold"/>
     </HBox>
-    
+
     <!-- Table of All Grades -->
-    <Label text="All Grades" style="-fx-font-size: 18; -fx-font-weight: bold;"/>
-    <TableView fx:id="gradesTable" prefWidth="500">
+    <Label text="All Grades" styleClass="grades-title"/>
+    <TableView fx:id="gradesTable" prefWidth="500" styleClass="grades-table">
         <columns>
             <TableColumn fx:id="subjectColumn" text="Subject" prefWidth="200"/>
             <TableColumn fx:id="gradeColumn" text="Grade" prefWidth="100"/>
