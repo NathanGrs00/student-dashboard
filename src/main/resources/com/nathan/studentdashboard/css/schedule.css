@@ -1,0 +1,47 @@
+/* schedule.css */
+.schedule-root {
+    -fx-padding: 20;
+    -fx-background-color: #f8f9fa;
+}
+
+.schedule-header {
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1565c0;
+    -fx-background-color: #e3f2fd;
+    -fx-alignment: center;
+    -fx-padding: 6 0 6 0;
+    -fx-border-color: #90caf9;
+    -fx-border-width: 0 0 1 0;
+}
+
+.schedule-time {
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #424242;
+    -fx-background-color: #f5f5f5;
+    -fx-alignment: center-right;
+    -fx-padding: 6 10 6 0;
+}
+
+.schedule-event-math {
+    -fx-background-color: #bbdefb;
+    -fx-border-color: #2196f3;
+    -fx-border-radius: 4;
+    -fx-background-radius: 4;
+    -fx-padding: 8;
+    -fx-font-weight: bold;
+    -fx-text-fill: #0d47a1;
+}
+
+.schedule-event-physics {
+    -fx-background-color: #ffe082;
+    -fx-border-color: #ffb300;
+    -fx-border-radius: 4;
+    -fx-background-radius: 4;
+    -fx-padding: 8;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ff6f00;
+}
+
+/* Add more .schedule-event-* classes for other subjects as needed */
