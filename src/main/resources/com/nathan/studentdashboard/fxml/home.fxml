@@ -22,7 +22,7 @@
                 <StackPane>
                     <ImageView fitHeight="64" fitWidth="64">
                         <image>
-                            <Image url="/com/nathan/studentdashboard/images/ic_settings.png"/>
+                            <Image url="@com/nathan/studentdashboard/images/ic_settings.png"/>
                         </image>
                     </ImageView>
                 </StackPane>
@@ -36,7 +36,7 @@
                 <StackPane>
                     <ImageView fitHeight="64" fitWidth="64">
                         <image>
-                            <Image url="/com/nathan/studentdashboard/images/ic_settings.png"/>
+                            <Image url="@com/nathan/studentdashboard/images/ic_settings.png"/>
                         </image>
                     </ImageView>
                 </StackPane>
@@ -50,7 +50,7 @@
                 <StackPane>
                     <ImageView fitHeight="64" fitWidth="64">
                         <image>
-                            <Image url="/com/nathan/studentdashboard/images/ic_settings.png"/>
+                            <Image url="@com/nathan/studentdashboard/images/ic_settings.png"/>
                         </image>
                     </ImageView>
                 </StackPane>
@@ -64,7 +64,7 @@
                 <StackPane>
                     <ImageView fitHeight="64" fitWidth="64">
                         <image>
-                            <Image url="/com/nathan/studentdashboard/images/ic_settings.png"/>
+                            <Image url="@com/nathan/studentdashboard/images/ic_settings.png"/>
                         </image>
                     </ImageView>
                 </StackPane>
@@ -78,7 +78,7 @@
                 <StackPane>
                     <ImageView fitHeight="64" fitWidth="64">
                         <image>
-                            <Image url="/com/nathan/studentdashboard/images/ic_settings.png"/>
+                            <Image url="@com/nathan/studentdashboard/images/ic_settings.png"/>
                         </image>
                     </ImageView>
                 </StackPane>

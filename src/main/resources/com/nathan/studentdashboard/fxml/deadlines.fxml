@@ -5,9 +5,9 @@
 <?import javafx.scene.paint.Color?>
 <?import javafx.geometry.Insets?>
 
-<VBox spacing="15" style="-fx-padding: 20;">
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" spacing="15" style="-fx-padding: 20;">
     <!-- Upcoming Deadline Field -->
-    <VBox style="-fx-background-color: #f8f9fa; -fx-border-radius: 10; -fx-background-radius: 10; -fx-border-color: #2196f3; -fx-border-width: 2; -fx-padding: 18;" effect="DropShadow">
+    <VBox style="-fx-background-color: #f8f9fa; -fx-border-radius: 10; -fx-background-radius: 10; -fx-border-color: #2196f3; -fx-border-width: 2; -fx-padding: 18;">
         <Label text="Upcoming Deadline" style="-fx-font-size: 19px; -fx-font-weight: bold; -fx-text-fill: #2196f3;" />
         <HBox spacing="10" alignment="CENTER_LEFT">
             <Label text="Title:" style="-fx-font-weight: bold;"/>

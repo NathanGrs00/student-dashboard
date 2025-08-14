@@ -19,11 +19,14 @@
         <TextField fx:id="noteTextField" promptText="Type a new note..." prefWidth="240" styleClass="notes-textfield"/>
         <Button fx:id="addNoteButton" text="Add Note" styleClass="notes-add-btn"/>
     </HBox>
-    
-    <!-- Notes List -->
+
     <ListView fx:id="notesListView"
               maxHeight="400"
               prefWidth="300"
-              placeholder="No notes yet. Add your first note!"
-              styleClass="notes-listview"/>
+              styleClass="notes-listview">
+        <placeholder>
+            <Label text="No notes yet. Add your first note!" />
+        </placeholder>
+    </ListView>
+
 </VBox> 
