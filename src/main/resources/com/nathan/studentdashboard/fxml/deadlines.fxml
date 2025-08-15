@@ -1,25 +1,24 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.effect.DropShadow?>
-<?import javafx.scene.paint.Color?>
-<?import javafx.geometry.Insets?>
 
-<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" spacing="15" style="-fx-padding: 20;">
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      spacing="15"
+      styleClass="deadlines-root">
     <!-- Upcoming Deadline Field -->
-    <VBox style="-fx-background-color: #f8f9fa; -fx-border-radius: 10; -fx-background-radius: 10; -fx-border-color: #2196f3; -fx-border-width: 2; -fx-padding: 18;">
-        <Label text="Upcoming Deadline" style="-fx-font-size: 19px; -fx-font-weight: bold; -fx-text-fill: #2196f3;" />
+    <VBox styleClass="deadline-card">
+        <Label text="Upcoming Deadline" styleClass="deadline-title" />
         <HBox spacing="10" alignment="CENTER_LEFT">
-            <Label text="Title:" style="-fx-font-weight: bold;"/>
-            <Label fx:id="deadlineTitleLabel" text="No deadlines" style="-fx-font-size: 15px;" />
+            <Label text="Title:" styleClass="deadline-label"/>
+            <Label fx:id="deadlineTitleLabel" text="No deadlines" styleClass="deadline-value" />
         </HBox>
         <HBox spacing="10" alignment="CENTER_LEFT">
-            <Label text="Due:" style="-fx-font-weight: bold;"/>
-            <Label fx:id="deadlineDateLabel" text="-" style="-fx-font-size: 15px;" />
+            <Label text="Due:" styleClass="deadline-label"/>
+            <Label fx:id="deadlineDateLabel" text="-" styleClass="deadline-value" />
         </HBox>
         <HBox spacing="10" alignment="CENTER_LEFT">
-            <Label text="Details:" style="-fx-font-weight: bold;"/>
-            <Label fx:id="deadlineDetailsLabel" text="-" style="-fx-font-size: 15px;"/>
+            <Label text="Details:" styleClass="deadline-label"/>
+            <Label fx:id="deadlineDetailsLabel" text="-" styleClass="deadline-value"/>
         </HBox>
     </VBox>
 </VBox>
